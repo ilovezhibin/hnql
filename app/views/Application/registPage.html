@@ -1,0 +1,11 @@
+#{extends 'main.html' /}
+#{set title:'注册' /}
+
+<form method="post" action="@{Application.toRegist()}">
+<fieldset><legend contenteditable="true"></legend>
+<span>账号</span><input placeholder="Type something…"  type="text" name="acountName"/> <br />
+<span>密码</span><input placeholder="Type something…"  type="text" name="password"/> <br />
+<span>昵称</span><input placeholder="Type something…" type="text" name="nickName"/>
+<p><label class="checkbox" contenteditable="true"><input type="checkbox" /> 勾选同意</label></p>
+<button class="btn" contenteditable="true" type="submit">提交</button></fieldset>
+</form>

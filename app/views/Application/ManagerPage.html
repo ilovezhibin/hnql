@@ -1,0 +1,11 @@
+#{extends 'main.html' /}
+#{set title:'管理页面' /}
+<p>${nickName}</p>
+
+登陆成功！！！
+
+<p></p>
+<p><a href="@{ManageWebsite.writeDataToDB()}">若数据库没数据，请点这里，每个用户只能点一次！</a></p>
+<p><a href="@{ManageWebsite.writeArticle()}">写文章</a></p>
+<p><a href="@{ManageWebsite.showArticles()}">查看全部文章</a></p>
+<p><a href="@{ManageWebsite.uploadImagesPage()}">上传图片</a></p>

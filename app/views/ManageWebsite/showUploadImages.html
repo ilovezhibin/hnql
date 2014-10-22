@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'显示上传图片' /}
+
+<p>已经上传了${imPathList.size()}张图片</p>
+%{
+	int length=imPathList.size();
+	for(int i=0;i<length;i++){
+
+}%
+<p><img src="${imPathList[i]}" alt="图片"></p>
+
+%{
+	}
+}%
