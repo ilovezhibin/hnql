@@ -17,15 +17,27 @@ public class Application extends Controller {
     }
     
     
+    /**注册页面
+     * 
+     */
     public static void registPage(){
     	render("/Application/registPage.html");
     }
+    /**提交注册表单
+     * @param acountName  帐号名
+     * @param password	  密码
+     * @param nickName   昵称
+     */
     public static void toRegist(@Required String acountName,@Required String password,@Required String nickName){
     	Users user = new Users(acountName, password, nickName);
     	user.save();
     	render("/Application/loginPage.html");
     }
     
+    /**处理登陆请求
+     * @param acountName
+     * @param password
+     */
     public static void toLogin(@Required String acountName,@Required String password){
     	Users user = Users.find("acountName = ?", acountName).first();
     	System.out.println(acountName+"   "+password);
@@ -41,6 +53,9 @@ public class Application extends Controller {
     	render("/Application/loginPage.html");
     }
     
+    /**进入管理页面
+     * @param nickName
+     */
     public static void managerPage(String nickName){
     	
     	

@@ -1,0 +1,17 @@
+#{extends 'main.html' /}
+#{set title:'显示上传图片' /}
+
+<p>最多能上传10张图片！！</p>
+<form method="POST" enctype="multipart/form-data" action="@{ManageWebsite.imageUpload()}">  
+<input type="file" id="attachment" name="ib.image0"/> <br> 
+<input type="file" id="attachment2" name="ib.image1"/>  <br>
+<input type="file" id="attachment2" name="ib.image2"/>  <br>
+<input type="file" id="attachment2" name="ib.image3"/>  <br>
+<input type="file" id="attachment2" name="ib.image4"/>  <br>
+<input type="file" id="attachment2" name="ib.image5"/>  <br>
+<input type="file" id="attachment2" name="ib.image6"/>  <br>
+<input type="file" id="attachment2" name="ib.image7"/>  <br>
+<input type="file" id="attachment2" name="ib.image8"/>  <br>
+<input type="file" id="attachment2" name="ib.image9"/>  <br>
+<input type="submit"/>  
+</form>
