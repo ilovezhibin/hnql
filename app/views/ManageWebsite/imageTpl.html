@@ -1,0 +1,26 @@
+#{extends 'ManageWebsite/tpl.html' /}
+#{set imageManager:'active' /}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container-fluid">
+ <div class="row-fluid">
+ 	 <div class="span3">
+ 	<div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">图片管理</li>
+              <li class="#{get 'upload'/}"><a href="@{ManageWebsite.uploadImagesPage()}">上传图片</a></li>
+              <li class="#{get 'showpics'/}"><a href="@{ManageWebsite.showImages(0)}">查看上传图片</a></li>
+               <li class="#{get 'banner'/}"><a href="#">首页大图设置</a></li>
+            </ul>
+          </div><!--/.well -->
+         </div>
+
+		<div class="span9">
+			#{doLayout /}
+	   </div>
+   </div>
+</div>

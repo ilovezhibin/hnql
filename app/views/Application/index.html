@@ -1,12 +1,2 @@
-#{extends 'main.html' /}
-#{set title:'登陆' /}
+#{extends 'Application/header.html' /}
 
-<form method="post" action="@{Application.index()}">
-<fieldset><legend contenteditable="true"></legend>
-<span>帐号</span><input placeholder="Type something…" type="text" /> <br />
-<span>密码</span><input placeholder="Type something…" type="text" />
-<p><label class="checkbox" contenteditable="true"><input type="checkbox" /> 勾选同意</label></p>
-<button class="btn" contenteditable="true" type="submit">提交</button></fieldset>
-</form>
-
-<input type="file">

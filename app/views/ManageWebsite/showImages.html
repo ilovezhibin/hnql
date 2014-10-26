@@ -1,0 +1,14 @@
+#{extends 'ManageWebsite/imagetpl.html' /}
+#{set title:'显示图片' /}
+#{set showpics:'active' /}
+%{
+	int length=images.size();
+	for(int i=0;i<length;i++){
+
+}%
+<p><img src="${images[i].getSmallPath()}" alt="图片"></p>
+<p>${images[i].getNewName()}</p>
+
+%{
+	}
+}%

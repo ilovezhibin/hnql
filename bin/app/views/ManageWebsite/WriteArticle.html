@@ -1,0 +1,62 @@
+#{extends 'editor_main.html' /}
+#{set title:'写文章' /}
+#{set 'moreStyles' }
+<!-- 配置文件 -->
+   
+
+#{/set}
+#{set 'moreScripts'}
+<script type="text/javascript" src="/public/javascripts/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/public/javascripts/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="/public/javascripts/zh-cn/zh-cn.js"></script>
+#{/set}
+
+
+
+<script type="text/javascript">
+    function addImage(){
+        var fileInput = document.createElement("p");
+        fileInput.innerHTML="aaafff";
+        document.getElementById("uploadImage").appendChild(fileInput);
+    }
+
+</script>
+
+
+<div id="uploadImage">
+    
+</div>
+<!-- <input type="button" value="添加图片" onclick="addImage()"> -->
+
+
+
+
+<form method="post" action="@{ManageWebsite.publishArticle()}">
+<fieldset><legend contenteditable="true"></legend>
+<span>标题</span><input placeholder="Type something…" name="title" type="text" /> <br />
+<span>类型</span><input placeholder="Type something…" name="articleType" type="text" /> <br />
+<span>来源</span><input placeholder="Type something…" name="articleFrom" type="text" /> <br />
+<textarea name="content" rows="20" cols="80"></textarea>
+ <!-- 加载编辑器的容器 -->
+    <div>
+    <h1>完整demo</h1>
+    <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+</div>
+
+<!-- <textarea name="content" id="article_content" cols="30" rows="10"></textarea> -->
+<button class="btn" contenteditable="true" type="submit">提交</button></fieldset>
+</form>
+<br/>
+
+
+
+<script id="container" name="content" type="text/plain">
+        这里写你的初始化内容
+    </script>
+    <!-- 配置文件 -->
+
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+    </script>

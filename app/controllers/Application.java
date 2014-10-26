@@ -10,57 +10,33 @@ import org.h2.engine.User;
 
 import models.*;
 
+/**这个类是用于接受游客的请求
+ * @author Administrator
+ *
+ */
 public class Application extends Controller {
 
     public static void index() {
-    	render("/Application/loginPage.html");
+    	List<Article> ra=Article.getArticleRecently(0, 10);//最近发表的文章
+    	List<Article> sqla=Article.getArticleByType(1, 0, 8);
+    	List<Article> jcql=Article.getArticleByType(2, 0, 21);
+    	List<Article> hwqq=Article.getArticleByType(3, 0, 5);
+    	List<Article> qxdb=Article.getArticleByType(4, 0, 8);
+    	List<Article> rdzx=Article.getArticleByType(5, 0, 5);
+    	List<Article> zcfg=Article.getArticleByType(6, 0, 5);
+    	List<Article> tszs=Article.getArticleByType(7, 0, 5);
+    	List<Article> qjjy=Article.getArticleByType(8, 0, 5);
+    	List<Article> wqfw=Article.getArticleByType(9, 0, 5);
+    	List<Article> qszl=Article.getArticleByType(10, 0, 5);
+    	List<Article> lnqx=Article.getArticleByType(11, 0, 5);
+    	List<Article> llyj=Article.getArticleByType(12, 0, 5);
+    	List<Article> spdb=Article.getArticleByType(13, 0, 7);
+    	List<Article> qjra=Article.getArticleByType(14, 0, 5);
+    	render(ra,sqla,jcql,hwqq,qxdb,rdzx,zcfg,tszs,qjjy,wqfw,qszl,lnqx,llyj,spdb,qjra);
     }
     
     
-    /**注册页面
-     * 
-     */
-    public static void registPage(){
-    	render("/Application/registPage.html");
-    }
-    /**提交注册表单
-     * @param acountName  帐号名
-     * @param password	  密码
-     * @param nickName   昵称
-     */
-    public static void toRegist(@Required String acountName,@Required String password,@Required String nickName){
-    	Users user = new Users(acountName, password, nickName);
-    	user.save();
-    	render("/Application/loginPage.html");
-    }
     
-    /**处理登陆请求
-     * @param acountName
-     * @param password
-     */
-    public static void toLogin(@Required String acountName,@Required String password){
-    	Users user = Users.find("acountName = ?", acountName).first();
-    	System.out.println(acountName+"   "+password);
-    	if(user!=null&&user.getPassword().equals(password)){
-    		System.out.println(user.getAcountName()+"   "+user.getPassword());
-    		
-    		session.put("acountName", acountName);
-    		session.put("nickName",user.getNickName());
-    		
-    		managerPage(user.getNickName());
-    		return;
-    	}
-    	render("/Application/loginPage.html");
-    }
-    
-    /**进入管理页面
-     * @param nickName
-     */
-    public static void managerPage(String nickName){
-    	
-    	
-    	render(nickName);
-    }
     
     
 

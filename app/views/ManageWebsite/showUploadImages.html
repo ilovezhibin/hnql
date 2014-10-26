@@ -1,6 +1,10 @@
-#{extends 'main.html' /}
-#{set title:'显示上传图片' /}
-
+#{extends 'ManageWebsite/tpl.html' /}
+#{set title:'上传预览' /}
+<br>
+<br>
+<br>
+<div class="container-fluid">
+	<div class="row-fluid">
 <p>已经上传了${imPathList.size()}张图片</p>
 %{
 	int length=imPathList.size();
@@ -12,3 +16,5 @@
 %{
 	}
 }%
+</div>
+</div>

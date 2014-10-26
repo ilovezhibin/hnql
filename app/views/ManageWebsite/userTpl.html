@@ -1,0 +1,23 @@
+#{extends 'ManageWebsite/tpl.html' /}
+#{set userManager:'active' /}
+<br>
+<br>
+<br>
+<div class="container-fluid">
+ <div class="row-fluid">
+ 	 <div class="span3">
+ 	<div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">用户管理</li>
+              <li class="#{get 'registPage'/}"><a href="@{ManageWebsite.registPage()}">注册新用户</a></li>
+                <li class="#{get 'showarticle'/}"><a href="#">查看用户</a></li>
+              
+            </ul>
+          </div><!--/.well -->
+         </div>
+
+		<div class="span9">
+			#{doLayout /}
+	   </div>
+   </div>
+</div>

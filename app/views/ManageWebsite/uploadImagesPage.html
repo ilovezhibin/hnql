@@ -1,6 +1,6 @@
-#{extends 'main.html' /}
-#{set title:'显示上传图片' /}
-
+#{extends 'ManageWebsite/imagetpl.html' /}
+#{set title:'上传图片' /}
+#{set upload:'active' /}
 <p>最多能上传10张图片！！</p>
 <form method="POST" enctype="multipart/form-data" action="@{ManageWebsite.imageUpload()}">  
 <input type="file" id="attachment" name="ib.image0"/> <br> 

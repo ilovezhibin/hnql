@@ -1,0 +1,848 @@
+@charset "GB2312";
+/* CSS Document */
+
+body{
+      margin: 0 auto;
+      padding: 0;
+    }
+
+a{text-decoration:none;}
+
+.wrap{
+      width: 980px;
+      height: px;
+      
+      margin: 0 auto;
+      padding: 0;
+      
+     }
+
+#header{
+      width: 272px;
+      height: 74px;
+      //background-color: yellow;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      top: 0;
+      left: 0;
+       }
+
+#header img{
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+
+
+#header_right{
+      margin-top: 0;
+      margin-left: 272px;
+      width: 708px;
+      height: 74px;
+     
+      }
+
+#header_top{
+      width: 708px;
+      height: 37px;
+      background: url("http://www.gdql.org/images/images2/index1012_03.jpg")
+      }
+
+
+
+#header_top p{
+       width: 50px;
+       font-size: 12px;
+       line-height: 24px;
+       color: #cc0000;
+       position: absolute;
+       top: -1px;
+       left: 855px;
+       border-right: 1px white solid;
+       
+      }
+
+#header_top a{
+       width: 50px;
+       font-size: 12px;
+       line-height: 24px;
+       color: #ffffff;
+       position: absolute;
+       left: 910px;
+       top: 10px;
+       
+      }
+
+
+
+#header_navibar{
+      width: 708px;
+      height: 37px;
+      background: url("http://www.gdql.org/images/images2/index1012_04.jpg");
+      }
+      
+     
+#header_navibar ul{
+     
+      left: 330px;
+      margin: 0px 0 0 65px;
+      padding: 2px 0 0 0;
+     
+ } 
+
+#header_navibar ul li{
+      list-style: none;
+   
+      float: left;
+      padding: 2px 0px;
+      } 
+
+#header_navibar ul li a{
+      font-size: 14px;
+      line-height: 28px;
+      color: #cc0000;
+      border-right: 1px red solid;
+      padding: 0 10px;
+      }  
+
+#header_navibar ul li a.last{   
+      border-right: 0px red solid;
+     }
+
+#flash{
+      width: 980px;
+      height: 200px;
+      background-color: #A9A9A9;
+     }
+
+#weather{
+     width: 978px;
+     height: 42px;
+     background-color: #EFEFEF;
+     border: 1px #BFBFBF solid;
+     margin: 2px 0 2px 0;
+     padding: 0;
+     }
+
+#contain{
+     width: 980px;
+    // height: 1200px;
+    // background-color: #E6E6FA;
+
+     }
+
+#contain-top{
+     width: 980px;
+     height: 320px;
+    // background-color: yellow;
+     position: relative;
+     top: 0;
+     left: 0;
+    }
+
+#top-left-word a{
+    font-size: 12px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: bold;
+}
+
+#top-left-word a:hover{
+    
+    color: #cc0000;
+   
+}
+
+#top-left{
+     width: 408px;
+     height: 320px;
+    // background-color: green;
+    }
+
+#top-left-shang{
+     width: 408px;
+     height: 14px;
+     background: url("http://www.gdql.org/images/images2/index1011_08.jpg" );
+      }
+
+#top-left-middle{
+     width: 408px;
+     height: 283px;
+   
+     position: relative;
+     top: 0;
+     left: 0;
+       }
+
+#top-left-middle-zuo{
+     width: 13px;
+     height: 273px;
+     
+     background: url("http://www.gdql.org/images/images2/index1011_10.jpg");
+     position: absolute;
+     top: 0px;
+     left: 0;
+      }
+
+#top-left-middle-zhong{
+     width: 372px;
+     height: 273px;
+     margin-top: 8px;
+     margin-left: 13px;
+     //background-color: pink;
+      }
+
+#top-left-middle-you{
+     width: 23px;
+     height: 273px;
+     background: url("http://www.gdql.org/images/images2/index1011_12.jpg");
+     position: absolute;
+     top: 0px;
+     left: 385px;
+      }
+
+#top-left-xia{
+     width: 408px;
+     height: 15px;
+     background: url("http://www.gdql.org/images/images2/index1011_15.jpg");
+     }
+
+#top-left-picture{
+      width: 372px;
+      height: 250px;
+      //background-color: gray;
+     }
+
+#top-left-picture img{
+     width: 372px;
+     height: 250px;
+     border: 0;
+}
+
+#top-left-word{
+      width: 372px;
+      height: 21px;
+      //border: 1px red solid;
+      text-align: center;
+      }
+
+#top-right{
+      width: 570px;
+      height: 300px;
+      //background-color: gray;
+      position: absolute;
+      top: 0;
+      left: 408px;
+      }
+
+#top-right-shang{
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 42px;
+      background: url("http://www.gdql.org/images/images2/index1011_09.jpg");
+      }
+
+#top-right-shang span{
+      
+       position: absolute;
+       top: 10px;
+       left: 40px;
+      }
+
+.font-biaoti{
+       color: white;
+       font-size: 15px;
+       line-height: 28px;
+       font-weight: bold;
+}
+
+
+#top-right-zhong{  
+      height: 277px;
+      background: url("http://www.gdql.org/images/images2/index1011_13.jpg");
+      }
+
+#top-right-zhong ul{
+      //border: 1px red solid;
+      padding: 15px 15px 0 25px;
+      margin: 0;
+     
+      }
+
+#top-right-zhong ul li a{
+      font-size: 14px;
+      line-height: 23px;
+      color: #000000;
+      }
+
+#top-right-zhong ul li a:hover{
+      color: #cc0000;
+      }
+
+#top-right-zhong ul li span{
+      font-size: 14px;
+      line-height: 23px;
+      color: #ff0000;
+      float: right;
+      }
+
+#contain-middle{
+       width: 980px;
+       height: 545px;
+      // background-color: pink;
+       position: relative;
+       top: 0;
+       left: 0;
+      // border: 1px black solid;
+      }
+
+#contain-middle-left{
+      width: 366px;
+      height: 550px;
+      //background-color: yellow;
+      }
+
+#contain-middle-zhong{
+      width: 370px;
+      height: 550px;
+      //background-color: gray;
+      position: absolute;
+      top: 0;
+      left: 372px;
+     // border: 1px black solid;
+       }
+
+#contain-middle-right{
+      width: 244px;
+      height: 550px;
+      //background-color: pink;
+      position: absolute;
+      top: 0;
+      left: 736px;
+      }
+
+
+#contain-middle-left-shang{
+
+      width: 366px;
+      height: 310px;
+      //background-color: pink;
+
+}
+
+#contain-middle-left-xia{
+      width: 366px;
+      height: 230px;
+      //background-color: red;
+
+}
+
+#contain-middle-right-shang{
+      width: 244px;
+      height: 310px;
+     // background-color: pink;
+      // border: 1px black solid;
+}
+
+#contain-middle-right-xia{
+      width: 244px;
+      height: 230px;
+     // background-color: red;
+      //border: 1px black solid;
+}
+
+.bg1{
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 47px;
+      background: url("http://www.gdql.org/images/images2/index1012_20.jpg");
+
+}
+
+.bg2{
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 47px;
+      background: url("http://www.gdql.org/images/images2/index1012_22.jpg");
+
+}
+
+#biaoti-qldt{
+      position: absolute;
+      top: 13px;
+      left: 30px;
+      width: 200px;
+      //border : 1px black solid;
+}
+
+#biaoti-2{
+      position: absolute;
+      top: 10px;
+      left: 37px;
+      width: 200px;
+}
+
+#biaoti-3{
+      position: absolute;
+      top: 10px;
+      left: 37px;
+      width: 200px;
+      color: #000000;
+}
+
+#biaoti-4{
+      position: absolute;
+      top: 13px;
+      left: 37px;
+      width: 200px;
+      color: #ffffff;
+}
+
+
+
+
+#sqldt-picture{
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 95px;
+      background-image: url("http://www.gdql.org/images/images2/index1012_23.jpg");
+}
+
+#sqldt-picture2{
+      position: relative;
+      top: 0;
+      left: 3px;
+      width: 210px;
+      height: 95px;
+      
+}
+
+#sqldt-picture3{
+      position: relative;
+      top: 0;
+      left: 10px;
+      height: 93px;
+      //background-image: url("http://www.gdql.org/images/images2/index1012_25.jpg");
+}
+
+#sqldt-picture a img{
+      width: 120px;
+      height: 90px;
+      margin-left:4px;
+      border: 0;
+}
+
+#sqldt-picture2 a img,#sqldt-picture3 a img{
+      width: 103px;
+      height: 90px;
+      margin-left:7px;
+      border: 0;
+}
+
+#span-link{
+      position: absolute;
+      top: 0;
+      left: 124px;
+      width: 236px;
+      height: 85px;
+      background-color: #FEF4E2;
+}
+
+#span-link2{
+      position: absolute;
+      top: 0;
+      left: 114px;
+      width: 115px;
+      height: 85px;
+      background-color: #FEF4E2;
+}
+
+.pink-a{
+      position: absolute;
+      top: 35px;
+      left: 158px;
+      
+}
+
+.pink-a2{
+      position: absolute;
+      top: 25px;
+      left: 131px;
+      width: 100px;
+      
+}
+
+.pink-a a,.pink-a2 a{
+      color: #CC0000;
+      font-size: 13px;
+      font-weight: bold;
+}
+
+
+
+.dt-link{
+      height: 160px;
+      background-image: url("http://www.gdql.org/images/images2/index1012_23.jpg");
+}
+
+#dt-link6{
+      margin: -2px 0 0 10px;
+      //border: 1px red solid;
+      width: 210px;
+      height: 160px;
+      margin-left: 10px;
+      background-image: url("http://www.gdql.org/images/images2/index1012_38.jpg");
+}
+
+
+#dt-link2{
+      height: 172px;
+      background-image: url("http://www.gdql.org/images/images2/index1012_23.jpg");
+}
+
+#dt-link3{
+      height: 482px;
+      background-image: url("http://www.gdql.org/images/images2/index1012_23.jpg");
+}
+
+#dt-link4{
+      height: 250px;
+      background-image: url("http://www.gdql.org/images/images2/index1012_25.jpg");
+}
+
+#dt-link5{
+      height: 87px;
+      background-image: url("http://www.gdql.org/images/images2/index1012_25.jpg");
+}
+
+.dt-link ul{
+      width: 325px;
+      margin: 0 0 0 35px;
+      padding: 0;
+     // border: 1px red solid ;
+}
+.dt-link a{
+
+      font-size: 12px;
+      line-height: 22px;
+      color: #333333;
+}
+
+.dt-link a:hover{
+      font-size: 12px;
+      line-height: 22px;
+      color: #ff0000;
+}
+
+.dt-bottom1{
+      margin: 0;
+      width: 366px;
+      height: 11px;
+      background-image: url("http://www.gdql.org/images/images2/index1012_26.jpg");
+}
+
+.dt-bottom2{
+      margin: 0;
+      width: 244px;
+      height: 11px;
+      background-image: url("http://www.gdql.org/images/images2/index1012_27.jpg");
+}
+
+.gengduo{
+     font-size: 12px;
+     line-height: 24px;
+     color: #CC0000;
+}
+
+.gengduo1{
+     position: absolute;
+     top: 14px;
+     left: 310px;
+}
+
+.gengduo2{
+     position: absolute;
+     top: 14px;
+     left: 190px;
+}
+
+#gengduo3{
+     position: absolute;
+     top: 11px;
+     left: 920px;
+
+}
+
+#gengduo3 a,.gengduo5 a{
+     color: #ffffff;
+}
+
+#gengduo4{
+     position: absolute;
+     top: 11px;
+     left: 310px;
+
+}
+
+.gengduo5{
+     position: absolute;
+     top: 13px;
+     left: 175px;
+
+}
+
+
+
+#picture-center{
+     width: 978px;
+     height: 173px;
+     margin: 0;
+     padding: 0;
+     //background-color: blue;
+}
+
+#picture-center-top{
+     position: relative;
+     top: 0;
+     left: 0;
+     height: 47px;
+     background-image: url("http://www.gdql.org/images/images2/index_32.jpg");
+}
+
+#picture-center-middle{
+     height: 110px;
+     background-image: url("http://www.gdql.org/images/images2/index_33.jpg");
+}
+
+#picture-center-bottom{
+     width: 980px;
+     height: 16px;
+     background-image: url("http://www.gdql.org/images/images2/index_34.jpg");
+}
+
+
+#qita{
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 980px;
+     height: 780px;
+    // background-color: pink;
+
+}
+
+#qita-left{
+    
+     width: 239px;
+     height: 775px;
+     //background-color: yellow;
+}
+
+#qita-right{
+     position: absolute;
+     top: 0;
+     left: 240px;
+     width: 740px;
+     height: 765px;
+    // background-color: green;
+}
+
+.qita-left-top{
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 239px;
+     height: 45px;
+     background-image: url("http://www.gdql.org/images/images2/index_35.jpg");
+}
+
+.qita-left-middle{
+     width: 239px;
+     height: 202px;
+     background-image: url("http://www.gdql.org/images/images2/index_38.jpg");
+}
+
+.qita-left-bottom{
+     width: 239px;
+     height: 11px;
+     background-image: url("http://www.gdql.org/images/images2/index_41.jpg");
+}
+
+
+
+#qita-picture  img{
+     margin-left:45px;
+     width: 150px;
+     height: 202px;
+     border:0;
+
+}
+
+.redian{
+     position: relative;
+     top:0;
+     left:0;
+     width: 740px;
+     height: 185px;
+    // background-color: pink;
+}
+
+.redian-left{
+     width: 370px;
+     height: 192px;
+    // background-color: red;
+}
+
+.redian-right{
+     position: absolute;
+     top: 0;
+     left: 370px;
+     width: 370px;
+     height: 180px;
+     //background-color: blue;
+}
+
+.redian-shang{
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 370px;
+     height: 45px;
+     background-image: url("http://www.gdql.org/images/images2/index_36.jpg");
+}
+
+.redian-zhong{
+     width: 370px;
+     height: 120px;
+     background-image: url("http://www.gdql.org/images/images2/index_39.jpg");
+}
+
+.redian-zhong ul{
+     margin: 0 0 0 40px;
+     padding: 0;
+}
+
+.redian-zhong ul a{
+     font-size: 14px;
+     line-height: 24px;
+     color: #000000;
+}
+
+.redian-xia{
+     width: 370px;
+     height: 14px;
+     background-image: url("http://www.gdql.org/images/images2/index_42.jpg");
+}
+
+#yqlj{
+     width: 978px;
+     height: 170px;
+     //background-color: pink;
+}
+
+.yqlj-top{
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 978px;
+     height: 40px;
+     background-image: url("http://www.gdql.org/images/images2/index_71.jpg");
+}
+
+.yqlj-middle{
+
+     width: 978px;
+     height: 115px;
+     background-image: url("http://www.gdql.org/images/images2/index_72.jpg");
+}
+
+.yqlj-bottom{
+
+     width: 978px;
+     height: 10px;
+     background-image: url("http://www.gdql.org/images/images2/index_73.jpg");
+}
+
+#pagefoot{
+     margin: 0 auto;
+     padding: 0;
+     width: 978px;
+     height: 153px;
+     //background-color: pink;
+}
+
+#pagefoot-top{
+     position: relative;
+     top: 0;
+     left: 255px;
+     width: 480px;
+     height: 73px;
+     //background-color: yellow;
+}
+
+#footword{
+     position: absolute;
+     top: 0;
+     left: 75px;
+     //background-color: green;
+     width: 405px;
+     height: 73px;
+     //text-align: center;
+}
+
+#footword p{
+     padding: 0;
+     margin: 10px 0 0 0 ;
+     text-align: center;
+     font-size: 13px;
+     line-height: 13px;
+}
+
+#pagefoot-bottom{
+     margin-top: 30px;
+     text-align: center;
+
+}
+
+#pagefoot-bottom img{
+    
+     width: 15px;
+     height: 20px;
+     
+}
+
+.yqlj-middle ul
+{
+     margin: 0;
+}
+
+.yqlj-middle ul li{
+     list-style: none;
+     float: left;
+     margin-left: 20px;
+
+}
+
+.yqlj-middle ul li a{
+     display: block;
+     color: #000000;
+     width: 55px;
+     height: 13px;
+     background-color: pink;
+     padding: 5px 10px;
+     font-size: 13px;
+}
+
+.yqlj-middle ul li a:hover{
+     
+     background-color: blue;
+}
+
+
+
+ 

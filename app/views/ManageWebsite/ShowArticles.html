@@ -1,54 +1,51 @@
-#{extends 'main.html' /}
+#{extends 'ManageWebsite/articletpl.html' /}
 #{set title:'显示文章' /}
-
-
-
-
-<div>
-
-	<p>
-		<span>按作者名查询</span><br>
-		<form action="@{ManageWebsite.findArticleByAuthor()}">
-			<input type="text" name="author" >
-			<input type="submit" value="submit">
-		</form>
-	</p>
-
-	<p>
-		<span>按时间区间查询</span><br>
-		<form action="@{ManageWebsite.findArticleByTime()}">
-			<span>格式为 2014-10-20 08:18:30</span><br>
-			<span>在</span><input type="text" name="left" >
-			<span>与</span><input type="text" name="right" ><span>之间</span>
-			<input type="submit" value="submit">
-		</form>
-	</p>
-	
-	<table border="1">	
-	<tr><td>标题</td><td>发表时间</td><td>作者</td><td>来源</td><td>操作</td></tr>
+#{set showarticle:'active' /}
+	<div class="row-fluid">
+			<div class="row offset1">
+				<span> 按作者名查询</span><br>
+				<form  class="navbar-search pull-left" action="@{ManageWebsite.findArticleByAuthor()}">
+					<input type="text" class="search-query" placeholder="Search" name="author" >
+					<button  class="btn btn-primary" type="submit" value="submit">搜索</button>
+				</form>
+			</div>
+			<br>
+			<br>
+				<div class="row offset1">
+				<span>按时间区间查询</span><br>
+				<form action="@{ManageWebsite.findArticleByTime()}">
+					<span>格式为 2014-10-20 08:18:30</span><br>
+					<span>在</span><input type="text" name="left" >
+					<span>与</span><input type="text" name="right" ><span>之间</span>
+					<input type="submit" value="submit">
+				</form>
+			</div>
+			
+			<div class="row offset1">
+			<table border="1">	
+			<tr><td>标题</td><td>发表时间</td><td>作者</td><td>来源</td><td>操作</td></tr>
+				
+				%{
+			for(int i=0;i<articles.size();i++){
+				ar=articles[i];
+			}%
+				<tr><td><a href="@{ManageWebsite.readOneArticle(ar.id)}">${ar.title}</a></td><td>${ar.publishTime}</td><td>${ar.author}</td>
+				<td>${ar.articleFrom}</td><td><a href="@{ManageWebsite.deleteArticles(ar.id)}">删除</a></td></tr>
+			%{
+			}
+			}%
+			
+			</table>
 		
-		%{
-	for(int i=0;i<articles.size();i++){
-		ar=articles[i];
-	}%
-		<tr><td><a href="@{ManageWebsite.readOneArticle(ar.id)}">${ar.title}</a></td><td>${ar.publishTime}</td><td>${ar.author}</td>
-		<td>${ar.articleFrom}</td><td><a href="@{ManageWebsite.deleteArticle(ar.id)}">删除</a></td></tr>
-	%{
-	}
-	}%
-	
-	</table>
-
-	%{
-	if(articles.size()>0){
-	ar=articles[0];
-	}%
-<p>${ar.content}</p>
-
-	%{}}%
-
-	<p><a href="@{ManageWebsite.writeArticle()}">写文章</a></p>
-
-
-	
-</div>
+			%{
+			if(articles.size()>0){
+			ar=articles[0];
+			}%
+			%{  for(ar in contents){   out.println(ar);     }  }%
+		<!-- <p>${ar.content}</p> -->
+		
+			%{}}%
+		
+			<p><a href="@{ManageWebsite.writeArticle()}">写文章</a></p>
+			</div>
+			</div>

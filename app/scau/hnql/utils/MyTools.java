@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import models.UploadPictures;
+import models.UploadPicture;
 import play.Play;
 import play.libs.Files;
 import scau.hnql.bean.ImagesBean;
@@ -28,7 +28,7 @@ public class MyTools {
     	oldName=getName(oldName, fileType);
     	id = System.currentTimeMillis();
     	id=id*100+rd.nextInt(100);
-    	String newName = author+oldName+rd.nextInt(10000)+"."+fileType;
+    	String newName = "scauql"+oldName+rd.nextInt(10000)+"."+fileType;
     	Date uploaDate = new Date(id);
     	String bigPath="public/uploadBigImages/"+newName;
     	String smallPath="public/uploadSmallImages/"+newName;
@@ -44,7 +44,7 @@ public class MyTools {
         	System.out.println("压缩失败！");
 		}
         
-        UploadPictures up = new UploadPictures(new Long(id), oldName, newName, fileType, "/"+bigPath, "/"+smallPath, uploaDate,author);
+        UploadPicture up = new UploadPicture(new Long(id), oldName, newName, fileType, "/"+bigPath, "/"+smallPath, uploaDate,author);
         up.save();
         imPaths.add("/"+smallPath);
         System.out.println("保存数据成功！");

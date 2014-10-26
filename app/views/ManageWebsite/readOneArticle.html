@@ -1,8 +1,11 @@
-#{extends 'main.html' /}
+#{extends 'ManageWebsite/tpl.html' /}
 #{set title:'阅读文章内容' /}
-
+<br>
+<br>
+<br>
 
 <h3>${article.title}</h3>
 <p><span>${article.publishTime}</span><span>   ${article.articleFrom}</span><span>   ${article.author}</span></p>
-<p>${article.content}</p>
+
+<p>%{    out.println(article.content);   }%</p>
 <p><a href="@{ManageWebsite.showArticles()}">查看文章列表</a></p>

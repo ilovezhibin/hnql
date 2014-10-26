@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'显示操作记录' /}
+
+%{
+	int length=olList.size();
+	for(int i=0;i<length;i++){
+
+}%
+<p><span>${olList[i].getAuthor()}</span><span>  ${olList[i].getDescription()}</span>
+<span>  ${olList[i].getOperationTime()}</span></p>
+
+%{
+	}
+}%
